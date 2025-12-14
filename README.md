@@ -47,8 +47,8 @@ Blue Tweezer : https://huggingface.co/spaces/lerobot/visualize_dataset?path=%2FZ
 
 - **Training**
 We trained two separate action policies:
- - One policy for picking up and handing a yellow dental mirror
- - One policy for picking up and handing blue  tweezers
+   One policy for picking up and handing a yellow dental mirror
+   One policy for picking up and handing blue  tweezers
 
 Each policy learns to identify the target object, approach it, and grasp it robustly across different table configurations. After pickup it stays in standby until the dentist’s gloved hand is detected. Training focused on consistency, safe motion, and repeatability rather than scaling to a large number of tools, aligning with the project’s proof-of-concept scope.
 
