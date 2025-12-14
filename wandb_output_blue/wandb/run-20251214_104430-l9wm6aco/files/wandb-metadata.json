@@ -1,0 +1,53 @@
+{
+  "os":  "Linux-6.1.0-39-amd64-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2025-12-14T10:44:30.810812Z",
+  "args":  [
+    "--dataset.repo_id=Zer0Lander/PickHandBlueTweezersv1",
+    "--policy.type=act",
+    "--policy.device=cuda",
+    "--steps=25000",
+    "--output_dir=outputs/train/act_so101_blue-Tweezersv1_pickdrop_20ksteps",
+    "--job_name=act_so101_blue_tweezers__pickdrop_20ksteps",
+    "--wandb.enable=true",
+    "--policy.push_to_hub=true",
+    "--policy.repo_id=Zer0Lander/act_policy_blue_tweezers_vf"
+  ],
+  "program":  "/opt/venv/bin/lerobot-train",
+  "git":  {
+    "remote":  "https://github.com/huggingface/lerobot.git",
+    "commit":  "a5b29d430105f5235eb05bbf2db5a0d747a869d6"
+  },
+  "root":  "outputs/train/act_so101_blue-Tweezersv1_pickdrop_20ksteps",
+  "host":  "robotics-jupyter-launcher-9315",
+  "executable":  "/opt/venv/bin/python",
+  "cpu_count":  160,
+  "cpu_count_logical":  160,
+  "gpu":  "AMD Instinct MI300X VF",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "2162185003008",
+      "used":  "951751942144"
+    }
+  },
+  "memory":  {
+    "total":  "2029207171072"
+  },
+  "gpu_amd":  [
+    {
+      "id":  "0",
+      "uniqueId":  "0x7529302d4406cfa3",
+      "vbiosVersion":  "113-M3000100-103",
+      "performanceLevel":  "auto",
+      "maxPower":  "750.0",
+      "series":  "AMD Instinct MI300X VF",
+      "model":  "0x74b5",
+      "vendor":  "Advanced Micro Devices, Inc. [AMD/ATI]",
+      "sku":  "M3000100",
+      "sclkRange":  "500Mhz - 2100Mhz",
+      "mclkRange":  "900Mhz - 1300Mhz"
+    }
+  ],
+  "writerId":  "7d7e10w4dd3arsgcv64inl7e0ba83yxv"
+}
