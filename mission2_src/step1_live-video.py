@@ -1,7 +1,16 @@
 import cv2
 import torch
 import gc
+from pathlib import Path
+import sys
 from PIL import Image
+
+# Ensure llava package is importable when running directly from this script
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+LLAVA_PACKAGE_DIR = PROJECT_ROOT / "ml-fastvlm"
+if LLAVA_PACKAGE_DIR.exists():
+    sys.path.insert(0, str(LLAVA_PACKAGE_DIR))
+
 from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
 from llava.model.builder import load_pretrained_model
 from llava.utils import disable_torch_init
